@@ -44,7 +44,7 @@ const FAQs = () => {
           </div>
           <div className="bg-[#F0F0F2] rounded-lg shadow-sm p-4 mb-4">
             <h3 className="font-bold mb-2 cursor-pointer" onClick={() => toggleAnswerVisibility('isCompliant')}>
-              &#8226; Is the system compliant with healthcare regulations and standards?
+              &#8226; Is the system compliant with healthcare regulations standards?
             </h3>
             {isAnswerVisible.isCompliant && (
               <p>Yes, our system is designed to comply with relevant healthcare regulations and standards, such as HIPAA (Health Insurance Portability and Accountability Act) in the United States.</p>
