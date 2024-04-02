@@ -1,3 +1,4 @@
+"use client"
 import Footer from '@/components/commons/Footer';
 import Header from '@/components/commons/Header';
 import FAQs from '@/components/landing_page/FAQs';
