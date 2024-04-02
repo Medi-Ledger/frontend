@@ -8,13 +8,13 @@ const GetStarted = () => {
       </div>
       <div className="flex flex-col justify-around items-center px-10 py-10 bg-gray-200 mt-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
-          <div className="bg-gray-100 shadow-lg rounded-lg overflow-hidden mb-4 md:mr-4"> 
+          <div className="bg-gray-100 shadow-sm rounded-lg overflow-hidden mb-4 md:mr-4"> 
           <img src="/patient.jpg" alt="Card" className="w-full h-56 object-cover object-center" />
           <div className="p-4 text-center">
             <button className='bg-yellow-400 text-gray-900 py-3 px-8 rounded-lg'>For Patients</button>
           </div>
         </div>
-        <div className="bg-gray-100 shadow-lg rounded-lg overflow-hidden mb-4 md:mr-4"> 
+        <div className="bg-gray-100 shadow-sm rounded-lg overflow-hidden mb-4 md:mr-4"> 
           <img src="/doc.png" alt="Card" className="w-full h-56 object-cover object-center" />
           <div className="p-4 text-center">
             <button className='bg-yellow-400 text-gray-900 py-3 px-8 rounded-lg'>For Doctors</button>

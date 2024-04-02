@@ -4,7 +4,7 @@ import FeatureCard from './FeatureCard';
 
 const Features = () => {
   return (
-    <div className="flex flex-col justify-around items-center px-10 py-10 bg-gray-200 ">
+    <div className="flex flex-col justify-around items-center px-10 py-10  ">
         <div className='text-3xl font-bold mb-10'>Features</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         <FeatureCard
