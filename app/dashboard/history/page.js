@@ -1,5 +1,6 @@
 "use client"
 import InnerHeader from '@/components/commons/InnerHeader';
+import Footer from '@/components/commons/Footer';
 import { getPatientHistory } from '@/api/patient';
 import PatientHistory from '@/components/dashboard/PatientHistory';
 import { React , useState, useEffect } from 'react';
@@ -21,9 +22,10 @@ const page = () => {
     }, []);
 
     return (
-        <div>
+        <div className='bg-gray-50'>
             <InnerHeader />
             <PatientHistory history={history} />
+            <Footer/>
         </div>
     )
 }

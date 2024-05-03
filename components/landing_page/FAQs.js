@@ -19,7 +19,7 @@ const FAQs = () => {
   };
 
   return (
-    <section className="bg-gray-200 py-10">
+    <section className="bg-gray-200 py-10" id="faqs">
       <div className="text-center"> 
             <h2 className="text-3xl font-bold mb-10">Frequently Asked Questions (FAQ's)</h2>
           </div>

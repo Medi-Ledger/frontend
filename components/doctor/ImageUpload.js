@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { uploadPatientImage } from '@/api/patient';
+import { uploadPatientImage } from '@/api/doctor';
 import { toast } from 'react-toastify';
 
 const ImageUpload = () => {
@@ -23,8 +23,14 @@ const ImageUpload = () => {
         }
 
         const formData = new FormData();
+        const user_id = localStorage.getItem('patientId');
+        if (!user_id){
+            alert('Invalid Patient');
+            return;
+        }
         formData.append('image', image);
         formData.append('name', name);
+        formData.append('user', user_id);
 
         try {
             const response = await uploadPatientImage(formData);

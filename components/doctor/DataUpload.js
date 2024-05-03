@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { uploadPatientData } from '@/api/patient';
+import { uploadPatientData } from '@/api/doctor';
 import { toast } from 'react-toastify';
 
 const DataUpload = () => {
@@ -23,8 +23,14 @@ const DataUpload = () => {
     }
 
     const formData = new FormData();
+    const user_id = localStorage.getItem('patientId');
+    if (!user_id) {
+      alert('Invalid Patient');
+      return;
+    }
     formData.append('data', JSON.stringify(data)); // Serialize the JSON data
     formData.append('name', name);
+    formData.append('user', user_id);
 
     try {
       const response = await uploadPatientData(formData);
