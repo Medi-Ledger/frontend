@@ -21,8 +21,9 @@ const InnerHeader = () => {
           </Link>
         </div>
         <div className="flex items-center justify-end gap-5">
-          <Link href="/dashboard/history" className='hover:text-cyan-700'>View History</Link>
-          <Link href="/dashboard" className='hover:text-cyan-700'>Upload Record</Link>
+          <Link href="/diagnosed-patients" className='hover:text-cyan-700'>View Patients</Link>
+          <Link href="/diagnosed-patients/history" className='hover:text-cyan-700'>View History</Link>
+          <Link href="/diagnosed-patients/upload" className='hover:text-cyan-700'>Upload Record</Link>
           <button className='hover:text-cyan-700' onClick={handleLogout}>Logout</button>
         </div>
       </div>

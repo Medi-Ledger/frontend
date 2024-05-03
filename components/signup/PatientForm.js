@@ -6,8 +6,10 @@ import { toast } from "react-toastify";
 import { CircularProgress } from "@mui/material";
 import CustomTextField from '../commons/CustomTextField';
 import { registerPatient } from '@/api/auth';
+import { useRouter } from 'next/navigation';
 
 const PatientForm = () => {
+    const router = useRouter();
     const validate = Yup.object({
         name: Yup.string().required("Name is Required"),
         username: Yup.string().required("Aadhar is Required"),
@@ -43,6 +45,7 @@ const PatientForm = () => {
     const handleUserSignUp = async (values) => {
         try {
             await registerUserMutation.mutateAsync(values);
+            router.push('/dashboard/history');
         } catch (error) {
             console.error('Error during user registration:', error);
         }
@@ -88,7 +91,7 @@ const PatientForm = () => {
                             placeholder="qwert@123"
                         />
                         <div className="flex justify-center">
-                            <button className="text-center bg-[#FFC671] w-full px-4 py-2" type="submit">
+                            <button className="text-center bg-[#FFC671] w-full px-4 py-2 rounded-sm my-1" type="submit">
                                 {registerUserMutation.isPending ? <CircularProgress size="1.3rem" color="inherit" /> : "Sign Up"}
                             </button>
                         </div>

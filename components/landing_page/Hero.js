@@ -13,9 +13,9 @@ const Hero = () => {
                 }}>Welcome to MediLedger</span>
                 <h1 className="text-6xl font-bold text-gray-900 my-7">Secure Medical Data</h1>
                 <p className="text-gray-600 text-md font-medium mb-7">Streamline your healthcare data management with our blockchain-powered platform.</p>
-                <button className="bg-[ hover:bg-[#ffb84e] text-white py-2 px-6">
+                <a className="bg-[#ffb84e] hover:bg-[#ffa958] text-white py-2 px-6" href="#get-started">
                     Get Started
-                </button>
+                </a>
             </div>
             <HeroImg />
         </section>

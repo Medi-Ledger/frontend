@@ -1,9 +1,9 @@
 "use client"
-import FileUpload from '@/components/dashboard/FileUpload'
-import ImageUpload from '@/components/dashboard/ImageUpload'
-import DataUpload from '@/components/dashboard/DataUpload'
+import FileUpload from '@/components/doctor/FileUpload'
+import ImageUpload from '@/components/doctor/ImageUpload'
+import DataUpload from '@/components/doctor/DataUpload'
 import React from 'react'
-import InnerHeader from '@/components/commons/InnerHeader'
+import InnerHeader from '@/components/doctor/InnerHeader'
 import Footer from '@/components/commons/Footer'
 
 const page = () => {

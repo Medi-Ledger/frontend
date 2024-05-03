@@ -11,10 +11,9 @@ const Header = () => {
                 </div>
                 <nav className="space-x-4">
                     <a href="#" className="hover:text-yellow-500">Home</a>
-                    <a href="#" className="hover:text-yellow-500">Features</a>
-                    <a href="#" className="hover:text-yellow-500">How It Works</a>
-                    <a href="#" className="hover:text-yellow-500">FAQ</a>
-                    <a href="#" className="hover:text-yellow-500">Contact Us</a>
+                    <a href="#get-started" className="hover:text-yellow-500">Get Started</a>
+                    <a href="#features" className="hover:text-yellow-500">Features</a>
+                    <a href="#faqs" className="hover:text-yellow-500">FAQ</a>
                 </nav>
             </div>
         </header>

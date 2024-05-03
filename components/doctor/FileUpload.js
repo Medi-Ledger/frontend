@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { uploadPatientFile } from '@/api/patient';
+import { uploadPatientFile } from '@/api/doctor';
 import { toast } from 'react-toastify';
 
 const FileUpload = () => {
@@ -24,8 +24,14 @@ const FileUpload = () => {
         }
 
         const formData = new FormData();
+        const user_id = localStorage.getItem('patientId');
+        if (!user_id){
+            alert('Invalid Patient');
+            return;
+        }
         formData.append('file', file);
         formData.append('name', name);
+        formData.append('user', user_id);
 
         try {
             const response = await uploadPatientFile(formData);

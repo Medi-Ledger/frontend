@@ -1,7 +1,7 @@
 "use client"
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Footer from '@/components/commons/Footer'
-import InnerHeader from '@/components/commons/InnerHeader'
+import InnerHeader from '@/components/commons/AuthHeader'
 import PatientArt from '@/components/signup/PatientArt'
 import PatientForm from '@/components/signup/PatientForm'
 import React from 'react'
